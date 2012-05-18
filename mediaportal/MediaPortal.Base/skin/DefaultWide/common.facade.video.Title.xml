@@ -19,10 +19,16 @@
           <id>50</id>
           <posX>622</posX>
           <posY>200</posY>
-          <width>622</width>
+          <width>650</width>
           <height>500</height>
           <onleft>2</onleft>
           <onright>2</onright>
+					<textXOff2>545</textXOff2>
+					<textYOff2>2</textYOff2>
+					<textXOff3>640</textXOff3>
+					<textYOff3>8</textYOff3>
+					<textalign3>right</textalign3>
+					<font3>font10</font3>
           <scrollOffset>2</scrollOffset>
           <spinPosX>1148</spinPosX>
           <spinPosY>660</spinPosY>
@@ -34,14 +40,14 @@
           <type>thumbnailpanel</type>
           <id>50</id>
           <posX>100</posX>
-          <posY>132</posY>
+          <posY>152</posY>
           <width>1200</width>
           <height>588</height>
           <scrollOffset>1</scrollOffset>
           <onleft>2</onleft>
           <onright>2</onright>
           <itemWidth>127</itemWidth>
-          <itemHeight>185</itemHeight>
+          <itemHeight>165</itemHeight>
           <textureWidth>97</textureWidth>
           <textureHeight>147</textureHeight>
           <thumbWidth>96</thumbWidth>
@@ -49,7 +55,7 @@
           <thumbPosX>0</thumbPosX>
           <thumbPosY>0</thumbPosY>
           <itemWidthBig>170</itemWidthBig>
-          <itemHeightBig>255</itemHeightBig>
+          <itemHeightBig>235</itemHeightBig>
           <thumbWidthBig>142</thumbWidthBig>
           <thumbHeightBig>204</thumbHeightBig>
           <textureWidthBig>143</textureWidthBig>
