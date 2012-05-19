@@ -277,11 +277,9 @@ namespace MediaPortal.Player
           }
 
           string extension = Path.GetExtension(aFileName).ToLower();
-
           if (extension == ".bdmv")
           {
-            return new VideoPlayerVMR9();
-            // return new BDPlayer();
+            return new BDPlayer();
           }
 
           if (extension != ".tv" && extension != ".sbe" && extension != ".dvr-ms" &&
