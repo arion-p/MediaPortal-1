@@ -5,6 +5,8 @@
   <allowoverlay>yes</allowoverlay>
   <controls>
     <import>common.settings.xml</import>
+    <import>common.window.xml</import>
+    <import>common.time.xml</import>
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -31,6 +33,7 @@
         <dialogTitle>90</dialogTitle>
         <valueTextInButton>yes</valueTextInButton>
         <valuePrefixText>94</valuePrefixText>
+        <textXOff>10</textXOff>
         <onclick>#(skin.settheme(#selectedlabel15,15))</onclick>
         <binding>#skin.currenttheme</binding>
         <subitems>
