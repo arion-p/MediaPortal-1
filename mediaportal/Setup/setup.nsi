@@ -515,8 +515,13 @@ SectionEnd
   ; used for digital tv
   !insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_NOTPROTECTED "$MPdir.Base\TsReader.ax"
   ; used for Mediaportal Audio Renderer
-  !insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_NOTPROTECTED "$MPdir.Base\mpaudiorenderer.ax"
-
+  ${If} ${FileExists} "$MPdir.Base\mpaudiorenderer.ax"
+	${If} ${SSE2Supported} 
+		!insertmacro UnInstallLib REGDLL NOTSHARED REBOOT_NOTPROTECTED "$MPdir.Base\mpaudiorenderer.ax"
+	${Else}
+		Delete  "$MPdir.Base\mpaudiorenderer.ax"
+	${EndIf}
+  ${EndIf}
 
 ### AUTO-GENERATED   UNINSTALLATION CODE ###
   !include "${git_MP}\Setup\uninstall.nsh"
