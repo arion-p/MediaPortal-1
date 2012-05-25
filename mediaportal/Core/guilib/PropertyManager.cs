@@ -443,6 +443,16 @@ namespace MediaPortal.GUI.Library
     }
 
     /// <summary>
+    /// Returns true if the specified property is defined, otherwise false.
+    /// </summary>
+    /// <param name="tag"></param>
+    /// <returns></returns>
+    public static bool PropertyIsDefined(string tag)
+    {
+      return _properties.ContainsKey(tag);
+    }
+
+    /// <summary>
     /// Removes the player properties from the hashtable.
     /// </summary>
     public static void RemovePlayerProperties()
