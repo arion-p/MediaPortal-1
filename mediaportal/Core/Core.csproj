@@ -348,6 +348,8 @@
     <Compile Include="guilib\GUIThemeManager.cs" />
     <Compile Include="guilib\ViewHandler.cs" />
     <Compile Include="guilib\XMLSkinFunctionAttribute.cs" />
+    <Compile Include="Player\BDOSDRenderer.cs" />
+    <Compile Include="Player\BDPlayer.cs" />
     <Compile Include="Player\FFDShow\FFDShowEngine.cs" />
     <Compile Include="Player\FFDShow\FFDShowReceiver.cs">
       <SubType>Form</SubType>
@@ -1850,6 +1852,7 @@
     <Compile Include="Util\Util.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Util\VideoDatabaseParserStrings.cs" />
     <Compile Include="Util\VideoThumbCreator.cs" />
     <Compile Include="Util\VirtualDirectory.cs">
       <SubType>Code</SubType>
