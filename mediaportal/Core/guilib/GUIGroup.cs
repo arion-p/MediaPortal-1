@@ -648,7 +648,7 @@ namespace MediaPortal.GUI.Library
 
       for (int i = index + 1; i < Children.Count; i++)
       {
-        Children[i].YPosition -= (Children[index].Height + spacing);
+        Children[i].YPosition += (Children[index].Height + spacing);
       }
     }
 
@@ -658,7 +658,7 @@ namespace MediaPortal.GUI.Library
 
       for (int i = index + 1; i < Children.Count; i++)
       {
-        Children[i].XPosition -= (Children[index].Width + spacing);
+        Children[i].XPosition += (Children[index].Width + spacing);
       }
     }
 
