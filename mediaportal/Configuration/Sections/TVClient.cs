@@ -375,6 +375,11 @@ namespace MediaPortal.Configuration.Sections
                 {
                   LoadGenreMap(xmlreader);
                 }
+
+                if (!xmlreader.HasSection<string>("genreoptions"))
+                {
+                  xmlreader.SetValueAsBool("genreoptions", "specifympaaratedasmovie", true);  // Rated programs are movies
+                }
               }
 
               // Populate the guide genre list with names.
@@ -1534,6 +1539,7 @@ namespace MediaPortal.Configuration.Sections
       this.buttonRenameGenre.TabIndex = 16;
       this.buttonRenameGenre.Text = "Rename";
       this.buttonRenameGenre.UseVisualStyleBackColor = true;
+      this.buttonRenameGenre.Visible = false;
       this.buttonRenameGenre.Click += new System.EventHandler(this.mpRenameGenre_Click);
       // 
       // mpCheckBoxRatingAsMovie
@@ -1585,6 +1591,7 @@ namespace MediaPortal.Configuration.Sections
       this.buttonRemoveGenre.TabIndex = 6;
       this.buttonRemoveGenre.Text = "Remove";
       this.buttonRemoveGenre.UseVisualStyleBackColor = true;
+      this.buttonRemoveGenre.Visible = false;
       this.buttonRemoveGenre.Click += new System.EventHandler(this.btnDeleteGenre_Click);
       // 
       // buttonNewGenre
@@ -1596,6 +1603,7 @@ namespace MediaPortal.Configuration.Sections
       this.buttonNewGenre.TabIndex = 5;
       this.buttonNewGenre.Text = "Add";
       this.buttonNewGenre.UseVisualStyleBackColor = true;
+      this.buttonNewGenre.Visible = false;
       this.buttonNewGenre.Click += new System.EventHandler(this.buttonNewGenre_Click);
       // 
       // buttonMapGenres
